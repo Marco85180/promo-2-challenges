@@ -29,6 +29,11 @@ end
 def is_divisible_by_two(an_integer)
   # TODO: return true if an_integer is divisible by 2
   # example: is_divisible_by_two(6) => true
+  if an_integer % 2 == 0
+    return true
+  else
+    return false
+  end
 end
 
 def random_subset(an_array, sample_size)
