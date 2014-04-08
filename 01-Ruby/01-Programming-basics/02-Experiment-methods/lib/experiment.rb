@@ -23,7 +23,7 @@ end
 def exactly_divide(an_integer, a_divider)
   # TODO: return divison of an_integer by a_divider (computing the floating division, NOT the euclidean one)
   # example: exactly_divide(13, 4) => 3.25
-  an_integer.to.f / a_divider
+  an_integer.to.f/a_divider
 end
 
 def is_divisible_by_two(an_integer)
