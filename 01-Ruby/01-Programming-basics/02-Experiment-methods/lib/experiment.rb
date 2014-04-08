@@ -23,7 +23,7 @@ end
 def exactly_divide(an_integer, a_divider)
   # TODO: return divison of an_integer by a_divider (computing the floating division, NOT the euclidean one)
   # example: exactly_divide(13, 4) => 3.25
-  an_integer.to.f/a_divider
+  an_integer.to_f/a_divider
 end
 
 def is_divisible_by_two(an_integer)
@@ -51,5 +51,5 @@ end
 def ascending_order(an_array)
   # TODO: return a copy of an_array with elements in ascending order
   # example: ascending_order([7, 3, 1, 6, 9]) => [1, 3, 6, 7, 9]
-  ascending_order.sort
+  an_array.sort
 end
