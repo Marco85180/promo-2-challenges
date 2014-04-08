@@ -17,6 +17,7 @@ end
 def replace(initial_string, old_letter, new_letter)
   # TODO: return a copy of the string with the new letter replacing the old one
   # example: replace("casanova", "a", "o") => "cosonovo"
+initial_string.tr('old_letter','new_letter')
 end
 
 def exactly_divide(an_integer, a_divider)
