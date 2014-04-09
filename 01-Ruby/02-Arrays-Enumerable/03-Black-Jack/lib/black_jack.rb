@@ -1,5 +1,6 @@
 def bank_score
   # TODO: Use Random to get a new random score
+  16 + rand(5)
 end
 
 def pick_card
