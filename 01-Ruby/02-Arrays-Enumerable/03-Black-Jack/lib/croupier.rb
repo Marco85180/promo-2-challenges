@@ -27,7 +27,7 @@ def asking_for_card?(score)
 
   puts "Do you want a new card?"
   answer = gets.chomp.downcase
-    if answer.downcase.include? "yes" || "y"
+    if answer.downcase == "yes" || answer.downcase == "y"
       true
     else
       false
