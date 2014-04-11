@@ -13,36 +13,32 @@ end
 def even_numbers(array)
   # TODO: Return the even numbers from a list of integers.
   #       You should use Enumerable#select
-    array_of_even_numbers = array.select do |num| num.even?
+    array.select do |num| num.even?
   end
-  array_of_even_numbers
 end
 
 def short_words(array, max_length)
   # TODO: Take and array of words, return the array of words not exceeding max_length characters
   #       You should use Enumerable#reject
-  array_short_word = array.reject do |element|
+    array.reject do |element|
     element.length > max_length
   end
-  array_short_word
 end
 
 def first_under(array, limit)
   # TODO: Return the first number from an array that is less than limit.
   #       You should use Enumerable#find
-  array_first_under = array.find do |element|
+    array.find do |element|
     element < limit
   end
-  array_first_under
 end
 
 def add_bang(array)
   # TODO: Take an array of strings and return a new array with "!" appended to each string.
   #       You should use Enumerable#map
-  array_add_bang = array.map do |element|
+    array.map do |element|
     element + "!"
   end
-  array_add_bang
 end
 
 def product(array)
