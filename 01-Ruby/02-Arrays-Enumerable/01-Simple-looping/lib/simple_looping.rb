@@ -26,9 +26,9 @@ def sum_recursive(min,max)
   if min > max
     raise ArgumentError, "Please check your stuff!!"
   elsif min < max
-    sum = max + sum_recursive(min, max-1)
+    sum = min + sum_recursive(min + 1, max)
   else
-    min
+    max
   end
 end
 
