@@ -21,6 +21,7 @@ full_name = name_from_terminal
 
 #TODO: use string concatenation to build a custom message embedding the computed full_name
 
-custom_message = "Hello " + full_name
+custom_message = "Hello " + full_name + " is there " + full_name.length.to_s + " characters"
 
 puts custom_message
+
