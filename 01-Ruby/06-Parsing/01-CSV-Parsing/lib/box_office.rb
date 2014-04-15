@@ -18,7 +18,7 @@ def most_successfull(number, max_year, file_name)
   end
 
   array.delete_if { |a| a[:year] >= max_year }
-  array.sort_by {|info_film| info_film[:earnings]}
+  array.sort_by! {|info_film| info_film[:earnings]}.reverse!
   array.take(number)
 
 end
