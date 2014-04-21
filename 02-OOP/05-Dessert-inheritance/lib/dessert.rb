@@ -9,7 +9,7 @@ class Dessert
   end
 
   def healthy?
-    @calories < 200 ? true : false
+    @calories < 200
   end
 
   def delicious?
@@ -26,7 +26,7 @@ class JellyBean < Dessert
   end
 
   def delicious?
-    @flavor == "black licorice" ? false : true
+    @flavor != "black licorice"
   end
 end
 

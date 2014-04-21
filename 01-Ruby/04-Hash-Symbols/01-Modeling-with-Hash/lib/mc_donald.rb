@@ -33,3 +33,21 @@ def calories_counter(*orders)
   end
   sum
 end
+
+puts calories_counter("Happy meal", "Cheese Burger", "Potatoes", "Coca", "Sprite")
+
+# def cal_for(order)
+#   sum = 0
+#   order.each do |element_of_order|
+#     if PRODUCT.has_key?(element_of_order)
+#       sum += PRODUCT[element_of_order]
+#     else
+#       composition_menu = MEAL[element_of_order]
+#       composition_menu.each do |ingredient|
+#         valeur_cal = PRODUCT[ingredient]
+#         sum += valeur_cal
+#       end
+#     end
+#   end
+#   sum
+# end
