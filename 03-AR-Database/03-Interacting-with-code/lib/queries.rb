@@ -1,8 +1,8 @@
 require 'sqlite3'
 
 # opens the database
-DATABASE_PATH = "lib/db/jukebox.sqlite"
-db = SQLite3::Database.new(DATABASE_PATH)
+database_path = File.join(File.dirname(__FILE__), 'db/jukebox.sqlite')
+db = SQLite3::Database.new(database_path)
 
 def number_of_rows(db, table_name)
   #TODO: count number of rows in table table_name
