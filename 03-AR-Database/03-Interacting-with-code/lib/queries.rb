@@ -6,25 +6,25 @@ db = SQLite3::Database.new(database_path)
 
 def number_of_rows(db, table_name)
   #TODO: count number of rows in table table_name
-  db.execute "SELECT COUNT(*) FROM #{table_name}"
+  (db.execute "SELECT COUNT(*) FROM #{table_name}").flatten.first
 end
 
 def sorted_artists(db)
   #TODO: return array of artists' names sorted alphabetically
-  db.execute "SELECT Name FROM Artist ORDER BY Name ASC"
+  (db.execute "SELECT Name FROM Artist ORDER BY Name ASC").flatten
 end
 
 def love_tracks(db)
   #TODO: return array of love songs
-  db.execute "SELECT Name FROM Track WHERE Name like '%love%'"
+  (db.execute "SELECT Name FROM Track WHERE Name like '%love%'").flatten
 end
 
 def long_tracks(db, min_length)
   #TODO: return tracks verifying: duration > min_length (minutes)
-  db.execute "SELECT Name FROM Track WHERE (Milliseconds >= #{min_length} * 60000)"
+  (db.execute "SELECT Name FROM Track WHERE Milliseconds > (#{min_length} * 60000)").flatten
 end
 
-puts number_of_rows(db,"Artist")
-p sorted_artists(db)
-p love_tracks(db)
-p long_tracks(db, 3)
+# p number_of_rows(db,"Artist")
+# p sorted_artists(db)
+# p love_tracks(db)
+# p long_tracks(db, 3)
