@@ -24,7 +24,6 @@ doc.search('td.title>a').each do |e|
   if not x.nil?
     y = x.search("td.subtext>span").first
     score = y.nil? ? 0 : y.inner_text.to_i
-
     Post.create({
       name: e.inner_text,
       date: Time.now,
