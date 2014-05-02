@@ -1,0 +1,25 @@
+footer {
+  padding: 20px;
+  background: black;
+  color: white;
+  min-height: 6em;
+}
+
+.landing-headline {
+  padding-top: 6em;
+  padding-bottom: 16em;
+}
+
+.sign {
+  padding-top: 2em;
+  padding-bottom: 6em;
+}
+
+h2 {
+  padding: 20px;
+}
+
+.form-horizontal {
+  border: 1px solid rgb(238, 238, 238);
+  padding: 40px 30px;
+}
