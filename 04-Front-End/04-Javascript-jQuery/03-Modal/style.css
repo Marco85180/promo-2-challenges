@@ -1,0 +1,15 @@
+.overlay{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.6;
+  background: black;
+  position: absolute;
+}
+
+.photo{
+  position: absolute;
+  top:10%;
+  left: 40%;
+}
